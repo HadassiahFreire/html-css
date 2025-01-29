@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title> <!-- Todos esses grupos são como se fossem divs, mas que tem sentido semantico -->
+    <style>
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(207, 149, 168);
+        margin: 0;
+        
+    }
+
+    header {
+ 
+        background-color: rgb(216, 253, 146);
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 3px 4px 6px 2px #4e373e;
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: palevioletred;
+        text-align: center;
+
+    }
+    
+    h1:hover {
+
+        background-color: wheat;
+        border-radius: 10px;
+       
+
+    }
+
+    
+    h2 {
+
+            color: palevioletred;
+
+    }
+
+    h2:hover {
+        
+        background-color: rgb(228, 205, 212);
+        border-radius: 10px;
+     
+    }
+
+    nav {
+        background-color: rgb(212, 185, 194);
+        padding: 3px; 
+        box-shadow: 4px 4px 2px 0px #9483899a;
+      
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: rgb(134, 182, 182);
+        font-weight: bold;
+        margin-right: 30px;
+        
+    
+        
+    }
+
+    nav > a:hover {
+
+        text-decoration: underline;
+        color: wheat;
+       
+    }
+
+    main {
+
+        background-color: rgb(216, 253, 146);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 0px 30px 0px 30px;
+        box-shadow: 3px 4px 6px 2px #4e373e;
+    }
+
+    footer { 
+        background-color: rgb(30, 34, 21);
+        padding: 8px;
+        margin: 0px;
+        text-align: center;
+        color: palevioletred;
+    }
+
+    footer > p {
+        margin: 0px;
+    }
+
+    article {
+
+        background-color: rgb(207, 207, 206);
+        padding: 5px
+        
+  
+    }
+
+    article > p {
+
+        color: rgb(94, 97, 89);
+
+    }
+    article > aside {
+
+        background-color: rgb(212, 185, 194);
+        text-align: center;
+        color: rgb(134, 182, 182);
+        font-weight: bold;
+    }
+    article > aside :hover {
+        background-color: wheat;
+        border-radius: 10px;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header> <!-- cabeçalho -->
+        <h1>Meu site</h1>
+        <nav><!-- Para criar um menú-->
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteúdo principal -->
+        <section id="assuntos">  <!-- Seções -->
+            <article><!-- conteúdo -->
+                <aside>
+
+                </aside>
+
+            </article>
+
+        </section>
+        <section id="notícias">
+            <article> <!-- conteúdo -->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae error beatae reiciendis laborum, quidem sint facilis tempore dicta corrupti cupiditate quisquam, a cum quis similique dolores temporibus sunt dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam voluptas earum impedit dolor libero officia repellat facilis quisquam eveniet explicabo, commodi error ipsa, non consequuntur. Fugit tempore eos officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A doloremque soluta eaque perferendis neque, minus id sit nam dignissimos, odio exercitationem, libero expedita consectetur et amet pariatur cumque molestiae vero.</p>
+                <aside><!-- conteúdo períférico (a parte) -->
+                    <p>
+                        Artigo escrito por José da Silva
+                    </p>
+                </aside> 
+            </article>
+        </section>
+    </main>
+    
+    <footer> <!-- rodapé-->
+        <p> Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+        
+
+</body>
+</html>

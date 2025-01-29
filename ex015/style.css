@@ -1,0 +1,25 @@
+@charset "UTF-8"
+
+<style>
+body {
+    background-color: rgb(151, 199, 241);
+    font-family: ;
+    font-size: 20px;
+}
+
+h1 {
+    color: deeppink;
+    background-color: rgb(242, 226, 245);
+
+}
+
+h2{
+    color: hotpink;
+}
+
+p{
+    color: rgb(130, 95, 194);
+    text-align: justify
+}
+
+</style>

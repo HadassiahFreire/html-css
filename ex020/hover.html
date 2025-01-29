@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         /* HOVER QUER DIZER PASSAR O MOUSE EM CIMA  */
+        div > p{   /* um paragrafo que é filho da div, que estão dentro da div. Ele so vai mexer no paragrafo que está dentro da div*/
+            display: none; /*  esse none quer dizer não mexer em nada, ou seja, aqui ele esconde o parágrafo pra colocar um seletor abaixo paraa quando passar o mouse o paragradfo aparecer, o seja, é preciso esconder o paraágrafo com o display none e */
+        } 
+
+        div:hover > p{  /* hover pra mudar a cor da letra quando passar o mouse em cima e bloquear o display none fazendo com que a frase apareça.*/
+            display: block;
+            color: rgb(65, 77, 238);
+            background-color: rgb(212, 7, 7);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <P>HORA DO LANCHINHO...</P>
+    </div>
+        
+</body>
+</html>

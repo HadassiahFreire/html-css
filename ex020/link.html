@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* Simbolos que podem ser usados nas css (SELETORES PERSONALIZADOS)
+            #= ID
+            . = Class
+            : = Pseudo-class
+            ::= pseudo-elements
+            > =Children (filho, pertence)
+            
+         */
+
+        /* cor da letra quando passar o mouse em cima das ancoras */
+
+        body{
+
+            font-family: Arial, Helvetica, sans-serif ;  /* */
+        
+        }
+
+        h1 {
+            color: rgb(136, 118, 219); /* Cor da letra de H1*/
+            text-align: center;
+        }
+
+        h1:hover { 
+            color: rgb(204, 22, 224); /* cor da letra de quanto passar o mouse em cima do H1*/
+            
+
+        }
+
+        a{
+            color: rgb(157, 92, 218); /* cor das letras das ancoras (link)*/
+            text-decoration: none; /* tirando aquele padrão sublinhado que fica nos links */
+            font-weight: bold; /* peso da fonte*/
+        }
+
+        a:visited {
+            color: rgb(136, 118, 219); /* cor que fica após a visitação do site */
+
+        }
+
+        a:hover {
+            color: rgb(204, 22, 224); /* cor da letra quando passar o mouse em cima das ancoras */
+            text-decoration: underline;
+            background-color:rgba(214, 167, 219, 0.527); 
+            border-radius: 10px;
+
+        }
+        a:active {
+            color: rgb(40, 168, 219); /* cor que fica quando pressionar o link, segura o botão de clicar do mouse e verá*/
+        }
+        a::before { 
+            content: '✦ ';	/* dois pontos after é uma pseudo classe, está com dois pontos duas vezes. Content quer dizer conteúdo. Essa sintaxe serve para acrescentar um conteúdo depous do linkm qualquer coisa */
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(185, 173, 216);
+
+        }   
+
+        a::after {
+            content: ' ✦';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(185, 173, 216); /* dois pontos after é uma pseudo classe, está com dois pontos duas vezes. Content quer dizer conteúdo. Essa sintaxe serve para acrescentar um conteúdo depous do link */
+        }
+        
+        .especial{
+            background-color: aquamarine;/* Caso eu precise fazer com que um link ou um elemento se destaque, posso usar as classes*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Repositório do Github</a></a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do curso em vídeo</a></li> <!--links foram envelopado: ctrol sift mais P-->
+
+    </ul>
+</body>
+</html>

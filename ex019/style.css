@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgb(233, 224, 212);
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+h1 {
+    
+    color: rgb(195, 155, 231);
+    text-shadow: 1px 1px 2px rgb(150, 118, 177);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1,5em;
+    font-weight: lighter;
+}                         /*  o ID serve para tornar um elemento único e  o CLASS para agrupar elementos que tenham características semelhantes*/
+h1#principal {          /*  Tudo que é id em html, em css é #
+                            Tudo que é class em html, em css é .*/
+    text-align: center;
+    background-color: rgb(197, 189, 174);
+    text-shadow: 1px 1px 1px rgb(72, 17, 124);
+    border-radius: 7px;
+    font-size:3em;
+    font-weight: bolder;
+}
+
+h2 {
+
+    color: rgb(159, 55, 250);
+
+}
+
+.basico {
+
+    color: rgb(173, 160, 185);
+    font-weight:bold;
+    text-shadow: 1px 1px 1px rgb(175, 165, 185);
+}   
+.intermediario{
+    color: rgb(159, 143, 177);
+    font-weight:bolder;
+    text-shadow: 1px 1px 1px rgb(186, 169, 204);
+}   
+
+.avancado {
+
+    color:rgb(143, 135, 153);
+    text-shadow: 1px 1px 1px rgb(160, 152, 170);
+} 
+
+.destaque {
+
+    background-color: rgb(205, 198, 211);
+    border-radius: 7px;
+}
+
+
+p {
+    
+    color: rgb(135, 118, 151);
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+     
+}
+
+body{
+    background-image: linear-gradient( to bottom,#5824F5 40%, #623FCA 60%);
+    background-attachment: fixed; /* é pra quando rolar o scrool, e não repetir o bg, é pra ele fixar fixo*/
+}
+
+main{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px#472e94a2; /* sombra; primeiro número é quanto a sombra vai andar para o lado, o segundo é para baixo o terceiro é quanto a sombra vai espalhar e a cor é quantoa a tranparencia, nesse caso é com a cor * DETALHE IMPORTANTE, PEGUE A MESMA COR DO BACKGROUND OU DA PALETA, E DEPOIS ARRASTE A COR PARA BAIXO APRA PEGAR UMA COR MAIS ESCURA E FAZER UMA SOMBRA MONOCROMÁRTICA*/
+    width: 600px; /* Largura*/
+    padding: 10px; /* espaço, margem*/
+    margin: auto;/* centraliza o texto*/
+
+}
+
+h1{
+
+   color:#564C75; 
+   text-align: center;
+   text-shadow: 1px 1px 2px#39324e9c; 
+   ;
+}
+
+h2{
+
+    color:#5F48A3;
+    
+}
+
+p {
+    text-align: justify;
+    color: #8A83A1;
+    
+}
