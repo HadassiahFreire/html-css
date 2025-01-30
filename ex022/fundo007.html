@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+
+        #container {
+            position: relative; /* por padrão, já vem relativo. Deve permanecer relativo.
+            */
+            background-color: rgb(0, 180, 156);
+            height: 500px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+
+        #conteudo {
+            position: absolute; /* o conteúdo é o que está dentro do container( recipiente), ele deve ficar relativo para que seja possível mexer na largura e altura( mas para centralizar precisa colocar somente as direções left e top)
+            */
+            background-color: rgb(180, 131, 226);
+            height: 200px;
+            width: 400px;
+            left: 50%; /* colocando em 50% lado esquerdo e 50% em cima, ela fica no meio, porrem so a ponta superior direita fica no meio, entao é preciso colocar o transform, translate para mover para cima e pro lado oposto, por isso está em negativo, porque esta movendo para o outro lado*/
+            top: 50%;
+
+            transform: translate(-50%,-50%); /* transformação de translação para mover pro lado opsoto do q está indo*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        </article>
+    </section>
+</body>
+</html>
