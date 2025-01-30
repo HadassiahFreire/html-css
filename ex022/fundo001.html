@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+
+
+        body {
+            background-image: url('imagens/wallpaper006.jpg');
+
+
+        }
+
+
+        div.quadrado {
+            background-color: pink; 
+            display: inline-block; /* isso faz com que os quadrados fiquem em horizontal*/
+            margin: 50px;
+            padding: 2px;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 5px 6px 9px rgba(0, 255, 221, 0.226)
+            
+        }
+        div#q1 {
+            background-color: aqua;
+            border: 2px solid pink;
+            box-shadow: 2px 3px 5px rgba(0, 255, 255, 0.349);
+        
+        }
+        div#q2 {
+            border: 2px solid aqua;
+            box-shadow: 2px 3px 5px rgba(255, 192, 203, 0.473);
+        }
+        div#q3 {
+            background-image: linear-gradient(to bottom, pink, aqua);
+            box-shadow: 2px 3px 5px rgba(255, 192, 203, 0.418);
+            border: 2px solid pink;
+            
+            
+        }
+        div#q4 {
+            background-image: url('imagens/pattern001.png');
+            border: 2px solid aqua;
+            box-shadow: 2px 3px 5px rgba(255, 192, 203, 0.473);
+           
+        }
+
+        div#q1:hover {
+
+            background-color: pink;
+            transition: 1.5s;
+            border: 2px solid aqua;
+            box-shadow: 2px 3px 5px rgba(255, 192, 203, 0.473);
+        }
+
+        div#q2:hover {
+
+            background-color: aqua;
+            transition: 1.5s;
+            border: 2px solid pink;
+            box-shadow: 2px 3px 5px rgba(0, 255, 255, 0.349);
+        }
+
+        div#q3:hover {
+
+            background-image: url('imagens/pattern002.png');
+            transition: 2s;
+            border: 2px solid aqua;
+            box-shadow: 2px 3px 5px rgba(0, 255, 255, 0.349);
+
+            }
+
+            div#q4:hover {
+
+            background-image: linear-gradient(to bottom, pink, aqua);
+            box-shadow: 2px 3px 5px rgba(255, 192, 203, 0.418);
+            border: 2px solid pink;
+            transition: 2s;
+            border: 2px solid aqua;
+            box-shadow: 2px 3px 5px rgba(0, 255, 255, 0.349);
+
+            }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado " id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    <div class="quadrado" id="q4">
+
+    </div>
+    
+</body>
+</html>
