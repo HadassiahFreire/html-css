@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 :root {
-    --cor0: #ebe5c5;
-    --cor1: #83e1ad;
-    --cor2: #3ddc84;
-    --cor3: #2fa866; 
-    --cor4: #1a5c37;  
-    --cor5: #063d1e; 
+    --cor0: #FA9BCC;
+    --cor1: #CFF5FA;
+    --cor2: #FAEF9B;
+    --cor3: #E0DCBE; 
+    --cor4: #D28FB1;  
+    
    
    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
    --fonte-destaque: 'Bebas Neue','cursive';
@@ -22,7 +22,7 @@
 
 
 Body {
-    background-color: aqua;
+    background-color: var(--cor3);
     padding: 0px;
     margin: 0px;
 }
@@ -30,8 +30,9 @@ Body {
 
 
 header {
+    background-color: var(--cor4);
     text-align: center;
-    padding-top: 10px;
+    padding: 30px;
        
 }
 main {
@@ -50,6 +51,7 @@ main {
     height: 300px;
     width: 200px;
     position: absolute;
+    border-radius: 20px;
     
 }
 
@@ -64,6 +66,7 @@ main {
     background-color: rgba(216, 112, 147, 0.568);
     height: 300px;
     width: 200px;
+    border-radius: 20px;
     
 }
 footer {
