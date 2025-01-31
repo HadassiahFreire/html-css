@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Playwrite+IN:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bad+Script&family=Lexend+Giga:wght@100..900&family=Playwrite+IN:wght@100..400&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
 :root {
     --cor0: #FA9BCC;
     --cor1: #CFF5FA;
@@ -9,8 +15,9 @@
     
    
    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
-   --fonte-destaque: 'Bebas Neue','cursive';
-   --fonte-android:'Android', 'cursive';
+   --fonte-destaque: 'bad Script','cursive';
+   --fonte-do-texto:'Quick', 'cursive';
+
    }
    
    
@@ -31,48 +38,169 @@ Body {
 
 header {
     background-color: var(--cor4);
+    color: white;
+    font-family: var(--fonte-destaque);
     text-align: center;
-    padding: 30px;
+    padding: 40px;
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px black;  
        
 }
+
+header > h1 {
+    
+    
+    font-family: var(--fonte-do-texto);
+    color: var(--cor2);
+    font-size: 43px;
+    transition: color 0.3s ease-in-out; /* Efeito suave */
+    text-shadow:  3px 3px rgb(29 29 29 / 48%)
+    
+    
+    
+}
+
+header > p {
+    
+    
+    font-weight: 400;
+    color: white;
+    transition: color 0.3s ease-in-out; /* Efeito suave */
+    font-family: var(--fonte-destaque);
+    
+           
+}
+
+header > p > a  {
+    
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    transition: color 0.3s ease-in-out; /* Efeito suave */
+    font-family: var(--fonte-destaque);
+    
+           
+}
+
+header > h1:hover  {
+
+    color: white;      
+}
+
+header > p:hover  {
+        
+    color: var(--cor2);     
+}
+
+header > p > a:hover  {
+        
+    color: var(--cor2);     
+}
+
 main {
-    background-color: rgb(228, 243, 243);
+    background-color: var(--cor3);
     padding: 20px;
+    font-family: var(--fonte-do-texto);
+    color: var(--cor4);
+    font-weight: bold;
+
 }
 
 #container1 {
+    background-color: black;
+    display: block;
     background-image: url(imagens/borboletagrande.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+    transform: color;
     height: 500px;
     position: relative;
+    box-shadow: 5px 6px 6px #49462ea8;
+    
 }
 
 #content1 {
     background-color: rgba(216, 112, 147, 0.568);
-    height: 300px;
+    height: 350px;
     width: 200px;
+    transition: transform 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
     position: absolute;
-    border-radius: 20px;
-    
+    border-radius: 20px;   
+    box-shadow: 5px 6px 3px #00000033;
+          
+}
+
+#container1:hover {
+    transform: scale(1.02); /* Aumenta a imagem em 20% */
+    transition: color 0.3s ease-in-out;
+}
+
+#content1:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 20% */
+    color: var(--cor4);
 }
 
 #container2 {
+    background-color: black;
     position: relative;
+    background-size: cover;
+    background-position: center left;
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+    transition: color;
     background-image: url(imagens/livro-grande.jpg);
     height: 500px;
+    box-shadow: 5px 6px 6px #49462ea8;
 }
 
 #content2 {
     position: absolute;
     background-color: rgba(216, 112, 147, 0.568);
-    height: 300px;
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+    height: 350px;
     width: 200px;
     border-radius: 20px;
+    box-shadow: 5px 6px 3px #00000033;
     
 }
-footer {
+#container2:hover {
+    transform: scale(1.02); /* Aumenta a imagem em 20% */
+}
 
-text-align: center;
-color: white;
-margin: 0;
+#content2:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 20% */
+}
+
+article > p {
+
+    color: #4b4a4a; 
+    
+    font-family: var(--fonte-do-texto);
+    font-size: 22px;
+    line-height: 18.5px;
+    font-weight: bolder;
+}
+
+.dentro {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer {
+    font-family: var(--fonte-padrao);
+    background-color: #cff5fa4b;
+    text-align: center;
+    color: var(--cor4);
+    margin: 0;
+    padding: 5px;
+    box-shadow: 9px -2px 8px 1px #817f7042;
+    font-weight: bold;
+    font-size: 18px
+    
 
 }
