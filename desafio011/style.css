@@ -20,21 +20,16 @@
 
    }
    
-   
-
 * article {
        margin: 10px;
-       padding: 10px;
+     
 }
-
 
 Body {
     background-color: var(--cor3);
     padding: 0px;
     margin: 0px;
 }
-
-
 
 header {
     background-color: var(--cor4);
@@ -50,26 +45,21 @@ header {
 
 header > h1 {
     
-    
     font-family: var(--fonte-do-texto);
     color: var(--cor2);
     font-size: 43px;
     transition: color 0.3s ease-in-out; /* Efeito suave */
-    text-shadow:  3px 3px rgb(29 29 29 / 48%)
-    
-    
-    
+    text-shadow:  3px 3px rgb(29 29 29 / 48%);
+       
 }
 
 header > p {
-    
-    
+ 
     font-weight: 400;
     color: white;
     transition: color 0.3s ease-in-out; /* Efeito suave */
     font-family: var(--fonte-destaque);
-    
-           
+ 
 }
 
 header > p > a  {
@@ -79,8 +69,7 @@ header > p > a  {
     color: white;
     transition: color 0.3s ease-in-out; /* Efeito suave */
     font-family: var(--fonte-destaque);
-    
-           
+              
 }
 
 header > h1:hover  {
@@ -112,21 +101,26 @@ main {
     display: block;
     background-image: url(imagens/borboletagrande.jpg);
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     transition: transform 0.3s ease-in-out; /* Suaviza a transição */
     transform: color;
     height: 500px;
     position: relative;
+    border-radius: 15px;
     box-shadow: 5px 6px 6px #49462ea8;
     
+}
+article {
+
+margin: 20px;
+
 }
 
 #content1 {
     background-color: rgba(216, 112, 147, 0.568);
     height: 350px;
     width: 200px;
-    transition: transform 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     position: absolute;
     border-radius: 20px;   
     box-shadow: 5px 6px 3px #00000033;
@@ -141,15 +135,36 @@ main {
 #content1:hover {
     transform: scale(1.05); /* Aumenta a imagem em 20% */
     color: var(--cor4);
+    background-color:#faef9b42;
+}   
+
+#content2:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 20% */
+    color: var(--cor4);
+    background-color:#faef9b42;
+    padding-right: 2px;
+}
+#content1 > p:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 20% */
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+#content2 > p:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 20% */
+    color: var(--cor4);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #container2 {
     background-color: black;
     position: relative;
+    border-radius: 15px;
     background-size: cover;
     background-position: center left;
+    background-attachment: fixed;
     transition: transform 0.3s ease-in-out; /* Suaviza a transição */
-    transition: color;
     background-image: url(imagens/livro-grande.jpg);
     height: 500px;
     box-shadow: 5px 6px 6px #49462ea8;
@@ -158,7 +173,7 @@ main {
 #content2 {
     position: absolute;
     background-color: rgba(216, 112, 147, 0.568);
-    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     height: 350px;
     width: 200px;
     border-radius: 20px;
@@ -176,11 +191,11 @@ main {
 article > p {
 
     color: #4b4a4a; 
-    
     font-family: var(--fonte-do-texto);
     font-size: 22px;
     line-height: 18.5px;
     font-weight: bolder;
+    margin-top: 0px;
 }
 
 .dentro {
@@ -190,17 +205,51 @@ article > p {
     font-size: 20px;
     line-height: 30px;
 }
+strong {
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    padding: 2px;
+    border-radius: 5px;
+
+}
+strong:hover {
+
+    color:#FAEF9B;
+    background-color: var(--cor0);
+    padding: 1px 2px 1px 2px;
+    border-radius: 5px;
+    box-shadow: 6px 4px 7px 1px #442e3986;
+    
+}
 
 footer {
     font-family: var(--fonte-padrao);
-    background-color: #cff5fa4b;
+    background-color: #cff5fa31;
     text-align: center;
     color: var(--cor4);
+    backdrop-filter: blur(50px); /* Desfoque para o efeito de vidro */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores WebKit */
     margin: 0;
     padding: 5px;
     box-shadow: 9px -2px 8px 1px #817f7042;
     font-weight: bold;
-    font-size: 18px
+    font-size: 18px   
     
+}
 
+.typing {
+    font-size: 30px;
+    color: var(--cor2);
+    font-family: var(--fonte-do-texto);
+    border-right: 2px solid #D28FB1;  /* Simula o cursor */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    padding: 6px 4px 6px 4px;
+    text-shadow: 1px 1px 1px #442e3986;
+    background-color: var(--cor0);
+    border-radius: 5px;
+    box-shadow: 6px 4px 7px 1px #442e3986;
+    
+   
 }

@@ -14,13 +14,13 @@
     </header>
     <main>
         <article>
-            <p>Estou ficando cansado</p>
-            <p>Da tal tecnologia</p>
-            <p>Só se fala por e-mail</p>
-            <p>Mensagem curta e fria</p>
-            <p>Twitter e Facebook</p>
-            <p>Antes que eu caduque</p>
-            <p>Vou dizer tudo em poesia.</p>
+            <p class="typing" id="typing-text">Estou ficando cansado</p>
+            <p>Da tal <strong>tecnologia</strong></p>
+            <p>Só se fala por <strong>e-mail</strong></p>
+            <p>Mensagem <strong>curta </strong>e fria</p>
+            <p><strong>Twitter</strong> e Facebook</p>
+            <p>Antes que eu<strong> caduque</strong></p>
+            <p>Vou dizer tudo em <strong>poesia</strong>.</p>
         </article>
         <section id="container1">
             <article id="content1">
@@ -34,22 +34,22 @@
             </article>
         </section> 
         <article>
-            <p>Arroba agora não pesa</p>
-            <p>É parte de um endereço</p>
-            <p>Ponto final nem se usa</p>
-            <p>Ou vai até no começo</p>
-            <p>Agora é .com</p>
-            <p>Se o saite é muito bom</p>
-            <p>Ele vale um alto preço.</p>
+            <p><strong>Arroba</strong> agora não pesa</p>
+            <p>É parte de um <strong>endereço</strong></p>
+            <p>Ponto <strong>final</strong> nem se usa</p>
+            <p>Ou vai até no <strong>começo</strong></p>
+            <p>Agora é <strong>.com</strong></p>
+            <p>Se o <strong>saite</strong> é muito bom</p>
+            <p>Ele vale um alto <strong>preço</strong>.</p>
         </article>
             <article>
-                <p>Pra piorar a liguagem</p>
-                <p>O emoticom é um risco</p>
-                <p>Tem símbolo para tudo</p>
-                <p>Ponto e vírgula e um asterisco</p>
-                <p>Um beijo significa</p>
-                <p>Pra entender como fica</p>
-                <p>Decifre esse rabisco.</p>
+                <p>Pra piorar a <strong>liguagem</strong></p>
+                <p>O <strong>emoticom</strong> é um risco</p>
+                <p>Tem <strong>símbolo</strong> para tudo</p>
+                <p>Ponto e vírgula e um <strong>asterisco</strong></p>
+                <p>Um beijo <strong>significa</strong></p>
+                <p>Pra entender como <strong>fica</strong></p>
+                <p>Decifre esse <strong>rabisco</strong>.</p>
             </article>
         <section id="container2">
             <article id="content2">
@@ -63,27 +63,51 @@
             </article>
         </section> 
             <article>
-                <p>Agora, escrevo e envio</p>
-                <p>Chegando na mesma hora</p>           
-                <p>Mas quando vou prosear</p>             
-                <p>A pessoa foi embora</p>             
-                <p>Abriu outro aplicativo</p>               
-                <p>O mundo ficou cativo</p>          
-                <p>Da tecnologia do agora.</p>
+                <p>Agora, <strong>escrevo </strong>e envio</p>
+                <p>Chegando na mesma <strong>hora</strong></p>           
+                <p>Mas quando vou <strong>prosear</strong></p>             
+                <p>A pessoa foi <strong>embora</strong></p>             
+                <p>Abriu outro <strong>aplicativo</strong></p>               
+                <p>O <strong>mundo </strong>ficou cativo</p>          
+                <p>Da <strong>tecnologia</strong> do agora.</p>
             </article>    
             <article>
-                    <p>Felizmente, pra orar</p>
-                    <p>Não precisa de internet</p>
-                    <p>Deus escuta todo mundo</p>
-                    <p>Se quiser, faça esse teste</p>
-                    <p>Dois pontos são dois joelhos</p>
-                    <p>Seus lábios são aparelhos</p>
-                    <p>Deixe que Deus interprete.</p>
+                    <p><strong>Felizmente</strong>, pra orar</p>
+                    <p>Não precisa de <strong>internet</strong></p>
+                    <p>Deus escuta todo <strong>mundo</strong></p>
+                    <p>Se <strong>quiser</strong>, faça esse teste</p>
+                    <p>Dois pontos são <strong>dois</strong> joelhos</p>
+                    <p>Seus lábios são <strong>aparelhos</strong></p>
+                    <p>Deixe que <strong>Deus</strong>interprete.</p>
             </article>   
         </section>  
     </main>
     <footer>
-        <p>Site criado por Gstavo Guanabara para o CursoemVideo</p>
+        <p>Site criado por Gustavo Guanabara para o CursoemVideo</p>
     </footer>
+
+    <script>
+        const textElement = document.getElementById('typing-text'); 
+        const text = "Estou ficando cansado"; // O texto que será digitado
+        let index = 0; 
+        let isDeleting = false;
+    
+        function typeEffect() {
+            if (!isDeleting && index < text.length) {
+                textElement.textContent = text.substring(0, index + 1); // Adiciona uma letra
+                index++;
+                setTimeout(typeEffect, 150); // Tempo para cada letra aparecer
+            } else if (isDeleting && index > 0) {
+                textElement.textContent = text.substring(0, index - 1); // Remove uma letra
+                index--;
+                setTimeout(typeEffect, 100); // Tempo para apagar
+            } else {
+                isDeleting = !isDeleting; // Alterna entre escrever e apagar
+                setTimeout(typeEffect, 1000); // Tempo de espera antes de inverter
+            }
+        }
+    
+        typeEffect();
+    </script>
 </body>
 </html>
