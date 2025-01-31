@@ -14,6 +14,7 @@
    }
    
    
+
 * article {
        margin: 0px;
        padding: 10px;
@@ -37,21 +38,25 @@ main {
 #container1 {
     background-image: url(imagens/borboletagrande.jpg);
     height: 500px;
+    position: relative;
 }
 
 #content1 {
     background-color: rgba(216, 112, 147, 0.568);
     height: 300px;
     width: 200px;
+    position: absolute;
     
 }
 
 #container2 {
+    position: relative;
     background-image: url(imagens/livro-grande.jpg);
     height: 500px;
 }
 
 #content2 {
+    position: absolute;
     background-color: rgba(216, 112, 147, 0.568);
     height: 300px;
     width: 200px;
@@ -61,5 +66,6 @@ footer {
 
 text-align: center;
 color: white;
+margin: 0;
 
 }
