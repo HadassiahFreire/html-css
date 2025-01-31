@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866; 
+    --cor4: #1a5c37;  
+    --cor5: #063d1e; 
+   
+   --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+   --fonte-destaque: 'Bebas Neue','cursive';
+   --fonte-android:'Android', 'cursive';
+   }
+   
+   
+* article {
+       margin: 0px;
+       padding: 10px;
+    }
+
+
+Body {
+    background-color: aqua;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;
+       
+}
+main {
+    background-color: rgb(228, 243, 243);
+    padding: 20px;
+}
+
+#container1 {
+    background-image: url(imagens/borboletagrande.jpg);
+    height: 500px;
+}
+
+#content1 {
+    background-color: rgba(216, 112, 147, 0.568);
+    height: 300px;
+    width: 200px;
+    
+}
+
+#container2 {
+    background-image: url(imagens/livro-grande.jpg);
+    height: 500px;
+}
+
+#content2 {
+    background-color: rgba(216, 112, 147, 0.568);
+    height: 300px;
+    width: 200px;
+    
+}
+footer {
+
+text-align: center;
+color: white;
+
+}
