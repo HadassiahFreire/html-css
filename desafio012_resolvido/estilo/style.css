@@ -1,10 +1,90 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Style+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&family=Style+Script&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, Sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+    
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font1);
     
 }
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font2);
+}
+
+header > h1 {
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header > p {
+
+    padding-bottom: 50px;
+
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+
+header a:hover, footer a:hover {
+
+    text-decoration: underline;
+}
+
+section {
+
+    padding-top: 10vh; /* faazz o efeito paralat, deixa só a section na tela*/
+    padding-bottom: 10vh; /* faazz o efeito paralat*/
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 4.5vw; /* faz com que a letra cresça junto com a tela. VW é largura*/
+}
+section.imagem > p {
+
+    display: inline-block; /* faz com que o conteúdo se adapte ao tamanho da caixa. Ou seja, bloqueia */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: aqua;
+    color: white;
+}
+
+footer {
+ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;   
+}
+

@@ -25,6 +25,10 @@
      
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 Body {
     background-color: var(--cor3);
     padding: 0px;
@@ -33,6 +37,7 @@ Body {
 
 header {
     background-color: var(--cor4);
+    font-variant: small-caps;
     color: white;
     font-family: var(--fonte-destaque);
     text-align: center;
@@ -45,7 +50,8 @@ header {
 
 header > h1 {
     
-    font-family: var(--fonte-do-texto);
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps;
     color: var(--cor2);
     font-size: 43px;
     transition: color 0.3s ease-in-out; /* Efeito suave */
