@@ -142,6 +142,7 @@ article {
     transform: scale(1.05); /* Aumenta a imagem em 20% */
     color: var(--cor4);
     background-color:#faef9b42;
+    
 }   
 
 #content2:hover {
