@@ -7,15 +7,15 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu" required>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="nome de usuário" autocomplete="username"> <!-- minlength e maxlength é tamanho minimo e máximo  de caractéres possiveis para acrecentar-->
         </p>
         <p>
 
             <label for="isen"> Senha: </label>
-            <input type="password" name="sen" id="isen" required> <!-- Para não permitir que o formulário envie os dados mesmo sem dados nos campos, deve-se colocar required-->
+            <input type="password" name="sen" id="isen" required minlength="8" size="8" placeholder="min 8 letras" autocomplete="current-password"> <!-- Para não permitir que o formulário envie os dados mesmo sem dados nos campos, deve-se colocar required. O size é o tamanho da caixa e o placeholder vc pode escrever coisas lá dentro. Current password quer dizer senha atual-->
         </p>
 
         <p>
