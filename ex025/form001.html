@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post"   autocomplete="off"> <!-- action serve para enviar o formulário para outra linguagem em backend para o formulario capturar os dados-->
+
+        <p><label for="iNome">Nome:</label> <input type="text" name="Nome" id="iNome"></p> <!-- Imput text serve para formulários de texto-->
+        <p><label for="iSobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="iSobrenome"></p> <!-- Envelope as tags nome e sobrenome com a tag label para ligar os textos as caixas de input. Deve-se colocar o ID no FOR.-->
+        <p><input type="submit" value="Enviar"></p><!-- Para fazer o botão de enviar, deve-se colocar input submit -->
+
+
+    </form>
+</body>
+</html>
