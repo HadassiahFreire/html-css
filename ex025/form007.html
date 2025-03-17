@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>EXEMPLO DE FORMULÁRIO</h1>
+    <form action="cadastro.php" method="get">
+        <P>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste"> <!--OPTGROUP funciona com o label pra identificar as regiões-->
+                    <option value="SP"> São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minhas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PI" >Piauí</option> <!-- Selected já deixa pre-selecionado-->
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </P>
+
+        <P>
+            <label for="iprof"> Profissão</label>
+            <input type="text" name="Prof" id="iprof" list="lstprof">
+            <datalist id="lstprof"> <!-- Dando um id para o datalist, da pra colocar as opções para ficarem aparecendo na caixa. No caso, vc coloca o id na datalist e da o nome, depois vc vai na caixinha do input de texto e acrescenta o id nela também-->
+                <option >Administrador</option>
+                <option >Desenvolvedor</option>
+                <option >Psicologo</option>
+                <option >Ator</option>
+                <option >Cantor</option>
+            </datalist>
+        </P>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="Msg" id="imsg   "></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+
+
+    </form>
+</body>
+</html>
